@@ -1,0 +1,77 @@
+---
+layout: none
+---
+
+  {% include header.html %}
+
+  <body class="bg-midnight text-white font-sans min-h-screen flex flex-col">
+
+  <!-- Hero Section -->
+  <section class="py-24 bg-midnight">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="text-5xl font-bold text-white">
+         Accelerating Software Integration
+      </h1>
+      <p class="mt-6 font-bold text-5xl text-white-300">
+        for <span id="typing-text"></span><span class="blinking-cursor">|</span>
+      </p>
+
+      <a
+        href="/projects"
+        class="mt-8 inline-block bg-white text-midnight px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition"
+      >
+        View Our Projects
+      </a>
+
+    </div>
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p class="mt-6 font-bold text-2xl text-white-300">
+        <i>Adaptable. Secure. Scalable.</i>
+      </p>
+    </div>
+
+  </section>
+
+    <script>
+      // const words = ["AI Integration", "Computing Efficiency", "Cloud Migration"];
+      const words = ["National Security", "Startups", "Enterprises"];
+      
+      const el = document.getElementById("typing-text");
+    
+      let wordIndex = 0;
+      let charIndex = 0;
+      let typing = true;
+    
+      function typeLoop() {
+        const currentWord = words[wordIndex];
+    
+        if (typing) {
+          el.textContent = currentWord.slice(0, charIndex + 1);
+          charIndex++;
+          if (charIndex === currentWord.length) {
+            typing = false;
+            setTimeout(typeLoop, 2400); // pause before deleting
+            return;
+          }
+        } else {
+          el.textContent = currentWord.slice(0, charIndex - 1);
+          charIndex--;
+          if (charIndex === 0) {
+            typing = true;
+            wordIndex = (wordIndex + 1) % words.length;
+          }
+        }
+    
+        setTimeout(typeLoop, typing ? 100 : 50);
+      }
+    
+      typeLoop();
+    </script>
+    
+  </section>
+
+
+
+  </body>
+
+  {% include footer.html %}

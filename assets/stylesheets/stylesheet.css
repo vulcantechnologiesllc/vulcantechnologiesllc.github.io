@@ -1,0 +1,25 @@
+
+  .blinking-cursor {
+    animation: blink 1s step-start infinite;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  #typing-text {
+    background: linear-gradient(90deg, #00f0ff, #ff00ff, #00f0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: shine 3s linear infinite;
+    font-weight: bold;
+  }
+
+  @keyframes shine {
+    to {
+      background-position: -200% center;
+    }
+  }

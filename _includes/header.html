@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Vulcan Technologies - Secure, Scalable, Strategic">
+  <meta property="og:description"
+    content="Vulcan Technologies researches and develops software solutions for government and enterprise clients.">
+  <meta property="og:image" content="https://vulcantechnology.net/assets/images/vulcanlogo2.png">
+  <!-- update if needed -->
+  <meta property="og:url" content="https://vulcantechnology.net">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Vulcan Technologies">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Vulcan Technologies</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            midnight: '#0f172a', // Deep blue tone
+            darkMidnight: '#020a1b'
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="/assets/stylesheets/stylesheet.css" />
+  <link rel="icon" type="image/x-icon" href="/assets/images/vultechlogo.png">
+
+</head>
+<!-- Navbar -->
+<header class="bg-darkMidnight border-b border-white-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-start items-center h-20">
+    <a href="/" class="flex items-center">
+      <img src="/assets/images/vulcanlogo3.png" alt="Vulcan Technologies" class="h-20 w-auto">
+    </a>
+
+    <nav class="hidden md:flex space-x-10 items-center text-sm text-gray-300 ml-auto mr-24">
+
+      <!-- Enterprise Flyout -->
+      <div class="relative group">
+        <button type="button"
+          class="inline-flex items-center gap-x-1 font-semibold text-base text-white hover:text-gray-300"
+          aria-expanded="false">
+          <span>Enterprise</span>
+          <svg class="w-5 h-5 transition-transform duration-300 ease-in-out" viewBox="0 0 20 20" fill="currentColor"
+            aria-hidden="true">
+            <path fill-rule="evenodd"
+              d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+
+        <div class="absolute left-1/2 z-10 mt-7 hidden group-hover:flex w-screen max-w-max -translate-x-1/2 px-4">
+          <div
+            class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm shadow-lg ring-1 ring-gray-900/5">
+            <div class="p-4">
+
+              <a href="/research/sme-workflow.html" class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                <div
+                  class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="bg-midnightblue" class="size-6">
+                    <path fill-rule="evenodd"
+                      d="M5.625 1.5H9a3.75 3.75 0 0 1 3.75 3.75v1.875c0 1.036.84 1.875 1.875 1.875H16.5a3.75 3.75 0 0 1 3.75 3.75v7.875c0 1.035-.84 1.875-1.875 1.875H5.625a1.875 1.875 0 0 1-1.875-1.875V3.375c0-1.036.84-1.875 1.875-1.875ZM9.75 17.25a.75.75 0 0 0-1.5 0V18a.75.75 0 0 0 1.5 0v-.75Zm2.25-3a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75Zm3.75-1.5a.75.75 0 0 0-1.5 0V18a.75.75 0 0 0 1.5 0v-5.25Z"
+                      clip-rule="evenodd" />
+                    <path
+                      d="M14.25 5.25a5.23 5.23 0 0 0-1.279-3.434 9.768 9.768 0 0 1 6.963 6.963A5.23 5.23 0 0 0 16.5 7.5h-1.875a.375.375 0 0 1-.375-.375V5.25Z" />
+                  </svg>
+
+                </div>
+                <div>
+                  <div class="font-semibold text-gray-900">SME Data Processing Platform</div>
+                  <p class="mt-1 text-gray-600">Streamlining data analysis and planning for Subject Matter Experts
+                    (SMEs)</p>
+                </div>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Government Flyout -->
+      <div class="relative group">
+        <button type="button"
+          class="inline-flex items-center gap-x-1 font-semibold text-base text-white hover:text-gray-300"
+          aria-expanded="false">
+          <span>Government</span>
+          <svg class="w-5 h-5 transition-transform duration-300 ease-in-out" viewBox="0 0 20 20" fill="currentColor"
+            aria-hidden="true">
+            <path fill-rule="evenodd"
+              d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+
+        <div class="absolute left-1/2 z-10 mt-7 hidden group-hover:flex w-screen max-w-max -translate-x-1/2 px-4">
+          <div
+            class="w-screen max-w-2xl flex-auto overflow-hidden rounded-3xl bg-white text-sm shadow-lg ring-1 ring-gray-900/5 relative">
+            <!-- Titles -->
+            <div class="absolute top-4 left-0 w-1/2 px-6 text-base font-semibold text-gray-700">
+              Open-Source Solutions
+            </div>
+            <div class="absolute top-4 right-0 w-1/2 px-6 text-base font-semibold text-gray-700">
+              Mission Solutions
+            </div>
+
+            <!-- Divider -->
+            <div class="hidden md:block absolute top-6 bottom-6 left-1/2 w-px bg-gray-200"></div>
+
+
+            <!-- Content Grid -->
+            <div class="p-4 pt-12 grid grid-cols-1 md:grid-cols-2 gap-4">
+              <!-- Left Column -->
+              <div class="space-y-4">
+                <a href="/projects/geoaxis-oauth-iac"
+                  class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="bg-midnightblue" class="size-6">
+                      <path
+                        d="M4.5 6.375a4.125 4.125 0 1 1 8.25 0 4.125 4.125 0 0 1-8.25 0ZM14.25 8.625a3.375 3.375 0 1 1 6.75 0 3.375 3.375 0 0 1-6.75 0ZM1.5 19.125a7.125 7.125 0 0 1 14.25 0v.003l-.001.119a.75.75 0 0 1-.363.63 13.067 13.067 0 0 1-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 0 1-.364-.63l-.001-.122ZM17.25 19.128l-.001.144a2.25 2.25 0 0 1-.233.96 10.088 10.088 0 0 0 5.06-1.01.75.75 0 0 0 .42-.643 4.875 4.875 0 0 0-6.957-4.611 8.586 8.586 0 0 1 1.71 5.157v.003Z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="font-semibold text-gray-900">GEOAxIS OAuth IaC</div>
+                    <p class="mt-1 text-gray-600">Open-source module for integrating GEOAxIS into cloud-native
+                      applications</p>
+                  </div>
+                </a>
+
+                <a href="/projects/container-aws-lambda"
+                  class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="bg-midnightblue" class="size-6">
+                      <path
+                        d="M12.378 1.602a.75.75 0 0 0-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03ZM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 0 0 .372-.648V7.93ZM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 0 0 .372.648l8.628 5.033Z" />
+                    </svg>
+
+                  </div>
+                  <div>
+                    <div class="font-semibold text-gray-900">Containerize AWS Lambda</div>
+                    <p class="mt-1 text-gray-600">Easily create and deploy containerized programs for AWS Lambda</p>
+                  </div>
+                </a>
+
+
+              </div>
+
+              <!-- Right Column -->
+              <div class="space-y-4">
+
+
+
+                <a href="/projects/intel-extract"
+                  class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                  <div
+                    class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="bg-midnightblue" class="size-6">
+                      <path d="M11.625 16.5a1.875 1.875 0 1 0 0-3.75 1.875 1.875 0 0 0 0 3.75Z" />
+                      <path fill-rule="evenodd"
+                        d="M5.625 1.5H9a3.75 3.75 0 0 1 3.75 3.75v1.875c0 1.036.84 1.875 1.875 1.875H16.5a3.75 3.75 0 0 1 3.75 3.75v7.875c0 1.035-.84 1.875-1.875 1.875H5.625a1.875 1.875 0 0 1-1.875-1.875V3.375c0-1.036.84-1.875 1.875-1.875Zm6 16.5c.66 0 1.277-.19 1.797-.518l1.048 1.048a.75.75 0 0 0 1.06-1.06l-1.047-1.048A3.375 3.375 0 1 0 11.625 18Z"
+                        clip-rule="evenodd" />
+                      <path
+                        d="M14.25 5.25a5.23 5.23 0 0 0-1.279-3.434 9.768 9.768 0 0 1 6.963 6.963A5.23 5.23 0 0 0 16.5 7.5h-1.875a.375.375 0 0 1-.375-.375V5.25Z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="font-semibold text-gray-900">IntelExtract</div>
+                    <p class="mt-1 text-gray-600">Text extraction, sentiment analysis, and reconstruction for
+                      intelligence documents</p>
+                  </div>
+                </a>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- R&D Flyout -->
+      <div class="relative group">
+        <button type="button"
+          class="inline-flex items-center gap-x-1 font-semibold text-base text-white hover:text-gray-300"
+          aria-expanded="false">
+          <span>R&D</span>
+          <svg class="w-5 h-5 transition-transform duration-300 ease-in-out" viewBox="0 0 20 20" fill="currentColor"
+            aria-hidden="true">
+            <path fill-rule="evenodd"
+              d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+
+        <div class="absolute left-1/2 z-10 mt-7 hidden group-hover:flex w-screen max-w-max -translate-x-1/2 px-4">
+          <div
+            class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm shadow-lg ring-1 ring-gray-900/5">
+            <div class="p-4">
+
+              <a href="/research/auto-containerization.html"
+                class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                <div
+                  class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="bg-midnightblue" class="size-6">
+                    <path
+                      d="M6 3a3 3 0 0 0-3 3v2.25a3 3 0 0 0 3 3h2.25a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3H6ZM15.75 3a3 3 0 0 0-3 3v2.25a3 3 0 0 0 3 3H18a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3h-2.25ZM6 12.75a3 3 0 0 0-3 3V18a3 3 0 0 0 3 3h2.25a3 3 0 0 0 3-3v-2.25a3 3 0 0 0-3-3H6ZM17.625 13.5a.75.75 0 0 0-1.5 0v2.625H13.5a.75.75 0 0 0 0 1.5h2.625v2.625a.75.75 0 0 0 1.5 0v-2.625h2.625a.75.75 0 0 0 0-1.5h-2.625V13.5Z" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="font-semibold text-gray-900">Auto-Containerization</div>
+                  <p class="mt-1 text-gray-600">ML/AI approaches for application containerization</p>
+                </div>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#contact" class="font-semibold text-white text-base hover:text-gray-300">Contact</a>
+
+    </nav>
+
+  </div>
+</header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const dropdowns = document.querySelectorAll('.group');
+    let timeoutId;
+    let currentDropdown = null; // Track the currently open dropdown
+
+    dropdowns.forEach(dropdown => {
+      const menu = dropdown.querySelector('.group-hover\\:flex');
+
+      dropdown.addEventListener('mouseenter', () => {
+        // Close the previously open dropdown (if any)
+        if (currentDropdown && currentDropdown !== menu) {
+          currentDropdown.classList.add('hidden');
+        }
+        clearTimeout(timeoutId);  // Clear the timeout to prevent closing
+        menu.classList.remove('hidden');  // Show the current dropdown
+        currentDropdown = menu;  // Update the current open dropdown
+      });
+
+      dropdown.addEventListener('mouseleave', () => {
+        timeoutId = setTimeout(() => {
+          menu.classList.add('hidden');  // Hide the dropdown after delay
+          if (currentDropdown === menu) {
+            currentDropdown = null;  // Reset currentDropdown when it closes
+          }
+        }, 300);  // 300ms delay
+      });
+    });
+  });
+</script>
