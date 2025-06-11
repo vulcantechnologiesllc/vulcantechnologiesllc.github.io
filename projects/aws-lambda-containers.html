@@ -18,20 +18,30 @@ layout: none
     </div>
   </section>
 
-  <!-- Introduction Section -->
-  <section class="py-16 bg-gray-900">
-    <div class="max-w-6xl mx-auto px-4 text-center">
+<!-- Introduction Section -->
+<section class="py-16 bg-midnight">
+  <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Text Column -->
+    <div>
       <h2 class="text-3xl font-semibold text-white">
-        The Future of Containerization: Efficient, Portable, and Scalable
+        Introduction to AWS Lambda and the Need for Containerization
       </h2>
       <p class="mt-4 text-lg text-gray-300">
         By leveraging AWS Lambda, organizations can now quickly develop and deploy backend application functionalities without the overhead of managing servers. However, AWS Lambda is currently limited in the environments and packages/libraries available during runtime. Containerization offers an intermediate solution by enabling developers to package libraries, dependencies, and runtimes within a container image while still being executable in AWS Lambda.
       </p>
     </div>
-  </section>
+
+    <!-- Image Column -->
+    <div class="flex justify-center">
+      <img src="/assets/images/lambda-container-diagram.png" alt="AWS Lambda Container Diagram" class="rounded-xl shadow-lg max-w-full h-auto">
+    </div>
+
+  </div>
+</section>
 
   <!-- Key Benefits Section -->
-  <section class="py-16 bg-gray-900">
+  <section class="py-16 bg-midnight">
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-3xl font-semibold text-center text-white">
         Benefits of Containerizing AWS Lambda
