@@ -1,0 +1,90 @@
+---
+layout: none
+---
+
+{% include header.html %}
+
+<body class="bg-midnight text-white font-sans min-h-screen flex flex-col">
+
+  <!-- Hero Section -->
+  <section class="py-24 bg-midnight">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h1 class="text-5xl font-extrabold text-white">
+        AWS Lambda Containers
+      </h1>
+      <p class="mt-6 text-lg text-gray-300">
+        Simplifying the process of containerizing functions for use in AWS Lambda.
+      </p>
+    </div>
+  </section>
+
+  <!-- Introduction Section -->
+  <section class="py-16 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-semibold text-white">
+        The Future of Containerization: Efficient, Portable, and Scalable
+      </h2>
+      <p class="mt-4 text-lg text-gray-300">
+        By leveraging AWS Lambda, organizations can now quickly develop and deploy backend application functionalities without the overhead of managing servers. However, AWS Lambda is currently limited in the environments and packages/libraries available during runtime. Containerization offers an intermediate solution by enabling developers to package libraries, dependencies, and runtimes within a container image while still being executable in AWS Lambda.
+      </p>
+    </div>
+  </section>
+
+  <!-- Key Benefits Section -->
+  <section class="py-16 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-semibold text-center text-white">
+        Benefits of Containerizing AWS Lambda
+      </h2>
+      <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+        <div class="text-center">
+          <svg class="w-12 h-12 mx-auto text-indigo-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M10 3a7 7 0 00-7 7h4l-2 2h-3v6h5v-8h3l-2-2h4a7 7 0 00-7-7z" clip-rule="evenodd" />
+          </svg>
+          <h3 class="mt-4 text-xl font-semibold text-white">Bundled Dependencies and Libraries</h3>
+          <p class="mt-2 text-gray-300">
+            Package all necessary dependencies and libraries within the container image, ensuring that your function has everything it needs to run without relying on external resources.
+          </p>
+        </div>
+        <div class="text-center">
+          <svg class="w-12 h-12 mx-auto text-indigo-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M3 2a1 1 0 011-1h2a1 1 0 011 1v15h6V2a1 1 0 011-1h2a1 1 0 011 1v16a1 1 0 01-1 1h-2a1 1 0 01-1-1V3h-6v14a1 1 0 01-1 1h-2a1 1 0 01-1-1z" clip-rule="evenodd" />
+          </svg>
+          <h3 class="mt-4 text-xl font-semibold text-white">Enables Larger Code Sizes</h3>
+          <p class="mt-2 text-gray-300">
+            AWS Lambda has a limit on the size of the code package. For zip files, the limit is 250MB (layers included). For containers, images can be up to 10GB in size, allowing for more extensive libraries and dependencies to be included.
+          </p>
+        </div>
+        <div class="text-center">
+          <svg class="w-12 h-12 mx-auto text-indigo-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M15 2a3 3 0 013 3v8.4a3 3 0 01-1.6 2.6l-4.4 2.4a3 3 0 01-2.4 0l-4.4-2.4A3 3 0 014 13.4V5a3 3 0 013-3h8z" clip-rule="evenodd" />
+          </svg>
+          <h3 class="mt-4 text-xl font-semibold text-white">Cross-Domain Compatibility</h3>
+          <p class="mt-2 text-gray-300">
+            Containers run agnostically, minimizing issues with cross-domain, network, or environment deployments.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="py-16 bg-indigo-600">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-semibold text-white">
+        Ready to containerize your AWS Lambda functions?
+      </h2>
+      <p class="mt-4 text-lg text-gray-200">
+        Check out our open-source project on GitHub to kickstart containerizing your functions for AWS Lambda.
+      </p>
+      <div class="mt-8">
+        <a href="https://github.com/vulcantechnologiesllc/aws-lambda-containers" class="px-8 py-3 bg-white text-indigo-600 font-semibold rounded-lg hover:bg-gray-100">
+          Repository on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+{% include footer.html %}
