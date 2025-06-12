@@ -1,0 +1,89 @@
+---
+layout: none
+---
+
+{% include header.html %}
+
+<body class="bg-midnight text-white font-sans min-h-screen flex flex-col">
+
+<!-- Introduction Section -->
+<section class="py-16 bg-midnight">
+  <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Text Column -->
+    <div>
+      <h2 class="text-3xl font-semibold text-white">
+        GEOAxIS OAuth IAC
+      </h2>
+      <p class="mt-4 text-lg text-gray-300">
+        The GEOAxIS OAuth IAC (Infrastructure as Code) module is an open-source toolkit designed to simplify the integration of GEOAxIS OAuth 2.0 into modern AWS-based serverless applications. It enables secure, standards-compliant authentication for mission-critical workloads in federal cloud environments.
+      </p>
+    </div>
+
+    <!-- Image Column -->
+    <div class="flex justify-center">
+      <img src="/assets/images/awsdocker.png" alt="AWS Lambda Container Diagram" class="rounded-xl shadow-lg max-w-full h-auto bg-gray-900">
+    </div>
+
+  </div>
+</section>
+
+<!-- Key Capabilities Section -->
+<section class="py-16 bg-gray-800">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-semibold text-center text-white">
+      Features of the GEOAxIS OAuth Integration Module
+    </h2>
+    <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+      <div class="text-center">
+        <svg class="w-12 h-12 mx-auto text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2a9.99 9.99 0 0 0-9.95 9.004 1 1 0 0 0 1.1 1.09 7.976 7.976 0 0 1 15.7 0 1 1 0 0 0 1.1-1.09A10 10 0 0 0 12 2z"/>
+          <path d="M12 7a5 5 0 0 0-5 5v4h2v5h6v-5h2v-4a5 5 0 0 0-5-5z"/>
+        </svg>
+        <h3 class="mt-4 text-xl font-semibold text-white">Terraform-Driven Deployment</h3>
+        <p class="mt-2 text-gray-300">
+          Fully automates AWS infrastructure provisioning using Terraform modules—including Lambda, API Gateway, and DynamoDB—ensuring reproducible, secure deployments.
+        </p>
+      </div>
+      <div class="text-center">
+        <svg class="w-12 h-12 mx-auto text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M4 4h16v2H4zm0 6h10v2H4zm0 6h16v2H4z"/>
+        </svg>
+        <h3 class="mt-4 text-xl font-semibold text-white">GEOAxIS-Compliant Lambda Handlers</h3>
+        <p class="mt-2 text-gray-300">
+          Includes pre-built Lambda functions to handle token validation, client credential exchange, and secure user session workflows aligned with GEOAxIS security requirements.
+        </p>
+      </div>
+      <div class="text-center">
+        <svg class="w-12 h-12 mx-auto text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" d="M3.75 12a8.25 8.25 0 1116.5 0 8.25 8.25 0 01-16.5 0zm8.53-3.78a.75.75 0 00-1.06 1.06L12.94 12l-1.72 1.72a.75.75 0 101.06 1.06l2.25-2.25a.75.75 0 000-1.06l-2.25-2.25z" clip-rule="evenodd"/>
+        </svg>
+        <h3 class="mt-4 text-xl font-semibold text-white">Modular & Extensible</h3>
+        <p class="mt-2 text-gray-300">
+          Built for flexibility. Easily extend functionality to custom endpoints, integrate with existing CI/CD pipelines, or adapt to other DoD IAM systems beyond GEOAxIS.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="py-16 bg-indigo-600">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-semibold text-white">
+      Ready to streamline your GEOAxIS integration?
+    </h2>
+    <p class="mt-4 text-lg text-gray-200">
+      Access our open-source module and accelerate deployment of secure, compliant serverless applications in AWS GovCloud or C2S.
+    </p>
+    <div class="mt-8">
+      <a href="https://github.com/vulcantechnologiesllc/geoaxis-oauth-iac" class="px-8 py-3 bg-white text-indigo-600 font-semibold rounded-lg hover:bg-gray-100">
+        View on GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+</body>
+
+{% include footer.html %}
