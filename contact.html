@@ -10,28 +10,70 @@ layout: none
   <section class="py-24 bg-midnight">
     <div class="max-w-3xl mx-auto px-4 text-center">
       <h1 class="text-4xl font-bold text-white">Contact Us</h1>
-      <p class="mt-4 text-lg text-gray-300">Have a question or want to work with us? Fill out the form below.</p>
+      <p class="mt-4 text-lg text-gray-300">Have a question? We'd love to hear from you.</p>
 
       <form 
         action="https://formspree.io/f/YOUR_FORM_ID" 
         method="POST" 
-        class="mt-8 text-left bg-midnight text-white p-6 rounded-lg shadow-lg"
+        class="mt-8 text-left bg-darkMidnight text-white p-6 rounded-lg shadow-lg"
       >
-        <div class="mb-4">
-          <label class="block mb-1 font-semibold" for="name">Name</label>
-          <input type="text" id="name" name="name" required class="w-full p-2 rounded border border-white">
+
+        <!-- First and Last Name -->
+        <div class="mb-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="block mb-1 font-semibold" for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first_name" required class="w-full p-2 rounded border border-white bg-midnight text-white">
+          </div>
+          <div>
+            <label class="block mb-1 font-semibold" for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last_name" required class="w-full p-2 rounded border border-white bg-midnight text-white">
+          </div>
         </div>
 
+        <!-- Company and Job Title -->
+        <div class="mb-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="block mb-1 font-semibold" for="company">Company</label>
+            <input type="text" id="company" name="company" class="w-full p-2 rounded border border-white bg-midnight text-white">
+          </div>
+          <div>
+            <label class="block mb-1 font-semibold" for="job-title">Job Title</label>
+            <input type="text" id="job-title" name="job_title" class="w-full p-2 rounded border border-white bg-midnight text-white">
+          </div>
+        </div>
+
+        <!-- Email -->
         <div class="mb-4">
           <label class="block mb-1 font-semibold" for="email">Email</label>
-          <input type="email" id="email" name="_replyto" required class="w-full p-2 rounded border border-white">
+          <input type="email" id="email" name="_replyto" required class="w-full p-2 rounded border border-white bg-midnight text-white">
         </div>
 
+        <!-- Checkbox Options -->
+        <div class="mb-6">
+          <span class="block mb-2 font-semibold">I'm interested in:</span>
+          <div class="space-y-2">
+            <label class="inline-flex items-center">
+              <input type="checkbox" name="interest" value="Data Engineering and Pipelines" class="form-checkbox text-indigo-600 mr-2">
+              Data Engineering and Pipelines
+            </label><br>
+            <label class="inline-flex items-center">
+              <input type="checkbox" name="interest" value="Cloud Solutions" class="form-checkbox text-indigo-600 mr-2">
+              Cloud Solutions
+            </label><br>
+            <label class="inline-flex items-center">
+              <input type="checkbox" name="interest" value="Applied Computing Research" class="form-checkbox text-indigo-600 mr-2">
+              Applied Computing Research
+            </label>
+          </div>
+        </div>
+
+        <!-- Notes -->
         <div class="mb-4">
-          <label class="block mb-1 font-semibold" for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required class="w-full p-2 rounded border border-white"></textarea>
+          <label class="block mb-1 font-semibold" for="notes">Additional Notes</label>
+          <textarea id="notes" name="notes" rows="5" class="w-full p-2 rounded border border-white bg-midnight text-white"></textarea>
         </div>
 
+        <!-- Submit -->
         <button type="submit" class="bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700 transition">
           Submit
         </button>
