@@ -2,15 +2,15 @@
 layout: none
 ---
 
-  {% include header.html %}
+{% include header.html %}
 
-  <body class="bg-midnight text-white font-sans min-h-screen flex flex-col">
+<body class="bg-midnight text-white font-sans min-h-screen flex flex-col">
 
   <!-- Hero Section -->
   <section class="py-24 bg-midnight">
     <div class="max-w-6xl mx-auto px-4 text-center">
       <h1 class="text-5xl font-bold text-white">
-         Accelerating Software Innovations
+        Accelerating Software Innovations
       </h1>
       <p class="mt-6 font-bold text-5xl text-white-300">
         for <span id="typing-text"></span><span class="blinking-cursor">|</span>
@@ -29,59 +29,65 @@ layout: none
   </section>
 
   <section class="bg-gray-800 py-24 sm:py-32">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 class="text-center text-lg/8 font-semibold text-white-900">Clients & Partners</h2>
-        <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-          <!-- <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="/assets/images/avant-genomics.png" alt="Avant Genomics" width="158" height="48"/> -->
-          <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="/assets/images/avant-genomics.png" alt="Avant Genomics" width="158" height="48"/>
-          <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindcss.com/plus-assets/img/logos/158x48/tuple-logo-gray-900.svg" alt="Tuple" width="158" height="48" />
-          <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="https://tailwindcss.com/plus-assets/img/logos/158x48/savvycal-logo-gray-900.svg" alt="SavvyCal" width="158" height="48" />
-          <!-- <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="https://tailwindcss.com/plus-assets/img/logos/158x48/statamic-logo-gray-900.svg" alt="Statamic" width="158" height="48" /> -->
-        </div>
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <h2 class="text-center text-lg/8 font-semibold text-white-900">Clients & Partners</h2>
+      <div
+        class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <!-- <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="/assets/images/avant-genomics.png" alt="Avant Genomics" width="158" height="48"/> -->
+        <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="/assets/images/avant-genomics.png"
+          alt="Avant Genomics" width="158" height="48" />
+        <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+          src="https://tailwindcss.com/plus-assets/img/logos/158x48/tuple-logo-gray-900.svg" alt="Tuple" width="158"
+          height="48" />
+        <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+          src="https://tailwindcss.com/plus-assets/img/logos/158x48/savvycal-logo-gray-900.svg" alt="SavvyCal"
+          width="158" height="48" />
+        <!-- <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="https://tailwindcss.com/plus-assets/img/logos/158x48/statamic-logo-gray-900.svg" alt="Statamic" width="158" height="48" /> -->
       </div>
+    </div>
   </section>
 
 
-    <script>
-      // const words = ["AI Integration", "Computing Efficiency", "Cloud Migration"];
-      const words = ["National Security", "Startups", "Enterprises"];
-      
-      const el = document.getElementById("typing-text");
-    
-      let wordIndex = 0;
-      let charIndex = 0;
-      let typing = true;
-    
-      function typeLoop() {
-        const currentWord = words[wordIndex];
-    
-        if (typing) {
-          el.textContent = currentWord.slice(0, charIndex + 1);
-          charIndex++;
-          if (charIndex === currentWord.length) {
-            typing = false;
-            setTimeout(typeLoop, 2400); // pause before deleting
-            return;
-          }
-        } else {
-          el.textContent = currentWord.slice(0, charIndex - 1);
-          charIndex--;
-          if (charIndex === 0) {
-            typing = true;
-            wordIndex = (wordIndex + 1) % words.length;
-          }
+  <script>
+    // const words = ["AI Integration", "Computing Efficiency", "Cloud Migration"];
+    const words = ["National Security", "Startups", "Enterprises"];
+
+    const el = document.getElementById("typing-text");
+
+    let wordIndex = 0;
+    let charIndex = 0;
+    let typing = true;
+
+    function typeLoop() {
+      const currentWord = words[wordIndex];
+
+      if (typing) {
+        el.textContent = currentWord.slice(0, charIndex + 1);
+        charIndex++;
+        if (charIndex === currentWord.length) {
+          typing = false;
+          setTimeout(typeLoop, 2400); // pause before deleting
+          return;
         }
-    
-        setTimeout(typeLoop, typing ? 100 : 50);
+      } else {
+        el.textContent = currentWord.slice(0, charIndex - 1);
+        charIndex--;
+        if (charIndex === 0) {
+          typing = true;
+          wordIndex = (wordIndex + 1) % words.length;
+        }
       }
-    
-      typeLoop();
-    </script>
-    
+
+      setTimeout(typeLoop, typing ? 100 : 50);
+    }
+
+    typeLoop();
+  </script>
+
   </section>
 
 
 
-  </body>
+</body>
 
-  {% include footer.html %}
+{% include footer.html %}
