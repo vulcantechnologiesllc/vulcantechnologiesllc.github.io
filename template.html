@@ -271,7 +271,27 @@
 
 <body class="bg-midnight text-white font-sans min-h-screen flex flex-col">
 
-    <div class="grid min-h-full place-items-center bg-midnight px-6 py-24 sm:py-32 lg:px-8">
+
+  <section>
+      <div class="relative isolate px-6 lg:px-8">
+    <!-- Top Gradient Blob -->
+    <div class="absolute inset-x-0 -top-48 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+      <div
+        class="relative left-[calc(50%-15rem)] aspect-[1155/678] w-[80rem] -translate-x-1/2 rotate-[42deg]
+          bg-gradient-to-tr from-[#6ea8ff] via-[#9089fc] to-[#ff80b5] opacity-25
+          sm:left-[calc(50%-40rem)] sm:w-[120rem]"
+        style="clip-path: polygon(
+          70% 35%, 100% 55%, 95% 20%, 
+          85% 0%, 80% 5%, 70% 30%, 
+          60% 65%, 52% 70%, 47% 60%, 
+          45% 38%, 28% 75%, 2% 60%, 
+          20% 100%, 30% 78%, 75% 95%, 
+          70% 35%
+        );">
+      </div>
+    </div>
+    
+    <div class="grid min-h-full place-items-center px-6 py-24 sm:py-32 lg:px-8">
       <div class="text-center">
         <p class="text-base font-semibold text-indigo-400">404</p>
         <h1 class="mt-4 text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">Page not found</h1>
@@ -282,7 +302,8 @@
         </div>
       </div>
     </div>
-
+  </section>
+  
 </body>
 
 {% include footer.html %}
