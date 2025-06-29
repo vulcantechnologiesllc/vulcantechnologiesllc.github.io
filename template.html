@@ -251,227 +251,37 @@
   </script>
 </head>
 
+<style>
+  @keyframes pulse-slow {
+    0%, 100% { transform: scale(1) translate(-50%, 0); }
+    50% { transform: scale(1.05) translate(-50%, 0); }
+  }
+  @keyframes pulse-slower {
+    0%, 100% { transform: scale(1) translate(0, 0); }
+    50% { transform: scale(1.08) translate(0, 0); }
+  }
 
+  .animate-pulse-slow {
+    animation: pulse-slow 12s ease-in-out infinite;
+  }
+  .animate-pulse-slower {
+    animation: pulse-slower 18s ease-in-out infinite;
+  }
+</style>
 
 <body class="bg-midnight text-white font-sans min-h-screen flex flex-col">
 
-  <section class="bg-midnight border-b border-white-800" style="z-index: -10">
-    <div class="relative isolate px-6 lg:px-8">
-      <!-- Top Gradient Blob -->
-      <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-        aria-hidden="true">
-        <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[72.25rem] -translate-x-1/2 rotate-[30deg] 
-        bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 
-        sm:left-[calc(50%-30rem)] sm:w-[115.5rem]" style="clip-path: polygon(
-          74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 
-          85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 
-          60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 
-          45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 
-          17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 
-          74.1% 44.1%
-        );">
-        </div>
-      </div>
-
-      <!-- Main Content -->
-      <div class="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56">
-        <div class="text-center">
-
-          <h1 class="text-4xl sm:text-7xl font-semibold tracking-tight text-balance 
-        text-transparent bg-clip-text 
-        bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 
-        pb-10">
-            We Engineer What's Next
-          </h1>
-
-          <h1 class="text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">
-            From Biofabrication to Applied AI
-          </h1>
-          <p class="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/relaxed">
-            <!-- Vulcan Technologies develops and delivers novel software solutions for national security, industries, and research institutions. -->
-            Engineering solutions where software meets the physical world.
-            <!-- From biofabrication to autonomous systems and AI-driven data pipelines, we research and develop solutions at the intersection of science, hardware, and mission-critical demands. -->
-          </p>
-
-
-
-        </div>
-      </div>
-
-      <!-- Bottom Gradient Blob -->
-      <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl 
-                sm:top-[calc(100%-30rem)]" aria-hidden="true">
-        <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[72.25rem] -translate-x-1/2 
-               bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 
-               sm:left-[calc(50%+36rem)] sm:w-[115.5rem]" style="clip-path: polygon(
-          74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 
-          85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 
-          60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 
-          45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 
-          17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 
-          74.1% 44.1%
-        );">
+    <div class="grid min-h-full place-items-center bg-midnight px-6 py-24 sm:py-32 lg:px-8">
+      <div class="text-center">
+        <p class="text-base font-semibold text-indigo-400">404</p>
+        <h1 class="mt-4 text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">Page not found</h1>
+        <p class="mt-6 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">Sorry, we couldn't find the page you're looking for.</p>
+        <div class="mt-10 flex items-center justify-center gap-x-6">
+          <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Go back home</a>
+          <!-- <a href="#" class="text-sm font-semibold text-gray-900">Contact support<span aria-hidden="true">&rarr;</span></a> -->
         </div>
       </div>
     </div>
-  </section>
-
-  <style>
-    #logo-scroller {
-      will-change: transform;
-    }
-  </style>
-
-  <section class="overflow-hidden border-b border-white-800 bg-midnight py-24 sm:py-32">
-
-    <div>
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div
-          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-          <div class="lg:pt-4 lg:pr-8">
-            <div class="lg:max-w-lg">
-              <!-- <h2 class="text-base/7 font-semibold text-indigo-400">Deploy faster</h2> -->
-              <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">Our Mission</p>
-              <p class="mt-6 text-lg/8 text-gray-300">Vulcan Technologies aims to deliver multi-disciplinary solutions
-                to complex, real-world problems. We focus on saving time, mitigating risks, and driving operational
-                efficiency.</p>
-              <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-400 lg:max-w-none">
-                <div class="relative pl-9">
-                  <dt class="inline font-semibold text-white">
-                    <svg class="absolute top-1 left-1 size-6 text-indigo-400" viewBox="0 0 24 24" fill="currentColor"
-                      aria-hidden="true" data-slot="icon">
-                      <path d="M21 6.375c0 2.692-4.03 4.875-9 4.875S3 9.067 3 6.375 7.03 1.5 12 1.5s9 2.183 9 4.875Z" />
-                      <path
-                        d="M12 12.75c2.685 0 5.19-.586 7.078-1.609a8.283 8.283 0 0 0 1.897-1.384c.016.121.025.244.025.368C21 12.817 16.97 15 12 15s-9-2.183-9-4.875c0-.124.009-.247.025-.368a8.285 8.285 0 0 0 1.897 1.384C6.809 12.164 9.315 12.75 12 12.75Z" />
-                      <path
-                        d="M12 16.5c2.685 0 5.19-.586 7.078-1.609a8.282 8.282 0 0 0 1.897-1.384c.016.121.025.244.025.368 0 2.692-4.03 4.875-9 4.875s-9-2.183-9-4.875c0-.124.009-.247.025-.368a8.284 8.284 0 0 0 1.897 1.384C6.809 15.914 9.315 16.5 12 16.5Z" />
-                      <path
-                        d="M12 20.25c2.685 0 5.19-.586 7.078-1.609a8.282 8.282 0 0 0 1.897-1.384c.016.121.025.244.025.368 0 2.692-4.03 4.875-9 4.875s-9-2.183-9-4.875c0-.124.009-.247.025-.368a8.284 8.284 0 0 0 1.897 1.384C6.809 19.664 9.315 20.25 12 20.25Z" />
-                    </svg>
-                    Leverage Data.
-                  </dt>
-                  <dd class="inline">Build data pipelines to process your company data and extract insights more
-                    efficiently.</dd>
-                </div>
-                <div class="relative pl-9">
-                  <dt class="inline font-semibold text-white">
-                    <svg class="absolute top-1 left-1 size-6 text-indigo-400" viewBox="0 0 24 24" fill="currentColor"
-                      aria-hidden="true" data-slot="icon">
-                      <path fill-rule="evenodd"
-                        d="M10.5 3.798v5.02a3 3 0 0 1-.879 2.121l-2.377 2.377a9.845 9.845 0 0 1 5.091 1.013 8.315 8.315 0 0 0 5.713.636l.285-.071-3.954-3.955a3 3 0 0 1-.879-2.121v-5.02a23.614 23.614 0 0 0-3 0Zm4.5.138a.75.75 0 0 0 .093-1.495A24.837 24.837 0 0 0 12 2.25a25.048 25.048 0 0 0-3.093.191A.75.75 0 0 0 9 3.936v4.882a1.5 1.5 0 0 1-.44 1.06l-6.293 6.294c-1.62 1.621-.903 4.475 1.471 4.88 2.686.46 5.447.698 8.262.698 2.816 0 5.576-.239 8.262-.697 2.373-.406 3.092-3.26 1.47-4.881L15.44 9.879A1.5 1.5 0 0 1 15 8.818V3.936Z"
-                        clip-rule="evenodd" />
-
-
-                      <!-- <path d="M16.5 7.5h-9v9h9v-9Z" />
-                  <path fill-rule="evenodd" d="M8.25 2.25A.75.75 0 0 1 9 3v.75h2.25V3a.75.75 0 0 1 1.5 0v.75H15V3a.75.75 0 0 1 1.5 0v.75h.75a3 3 0 0 1 3 3v.75H21A.75.75 0 0 1 21 9h-.75v2.25H21a.75.75 0 0 1 0 1.5h-.75V15H21a.75.75 0 0 1 0 1.5h-.75v.75a3 3 0 0 1-3 3h-.75V21a.75.75 0 0 1-1.5 0v-.75h-2.25V21a.75.75 0 0 1-1.5 0v-.75H9V21a.75.75 0 0 1-1.5 0v-.75h-.75a3 3 0 0 1-3-3v-.75H3A.75.75 0 0 1 3 15h.75v-2.25H3a.75.75 0 0 1 0-1.5h.75V9H3a.75.75 0 0 1 0-1.5h.75v-.75a3 3 0 0 1 3-3h.75V3a.75.75 0 0 1 .75-.75ZM6 6.75A.75.75 0 0 1 6.75 6h10.5a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V6.75Z" clip-rule="evenodd" /> -->
-                    </svg>
-                    Ground-breaking Research.
-                  </dt>
-                  <dd class="inline">Combine cutting-edge research methodologies to bridge gaps in knowledge and drive
-                    innovation.</dd>
-                </div>
-                <div class="relative pl-9">
-                  <dt class="inline font-semibold text-white">
-                    <svg class="absolute top-1 left-1 size-6 text-indigo-400" viewBox="0 0 24 24" fill="currentColor"
-                      aria-hidden="true" data-slot="icon">
-
-                      <path fill-rule="evenodd"
-                        d="M2.25 6a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V6Zm3.97.97a.75.75 0 0 1 1.06 0l2.25 2.25a.75.75 0 0 1 0 1.06l-2.25 2.25a.75.75 0 0 1-1.06-1.06l1.72-1.72-1.72-1.72a.75.75 0 0 1 0-1.06Zm4.28 4.28a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z"
-                        clip-rule="evenodd" />
-
-                      <!-- <path d="M4.632 3.533A2 2 0 0 1 6.577 2h6.846a2 2 0 0 1 1.945 1.533l1.976 8.234A3.489 3.489 0 0 0 16 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234Z" />
-                  <path fill-rule="evenodd" d="M4 13a2 2 0 1 0 0 4h12a2 2 0 1 0 0-4H4Zm11.24 2a.75.75 0 0 1 .75-.75H16a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75h-.01a.75.75 0 0 1-.75-.75V15Zm-2.25-.75a.75.75 0 0 0-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75h-.01Z" clip-rule="evenodd" /> -->
-                    </svg>
-                    Applied Software Engineering.
-                  </dt>
-                  <dd class="inline">Solve mission-critical problems through scalable, resilient, and secure software
-                    solutions.</dd>
-                </div>
-              </dl>
-            </div>
-          </div>
-
-        <div>
-          <h2 class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-2xl text-center pb-10">Customers & Partners</h2>
-
-          <div class="relative h-96 overflow-hidden flex justify-center">
-            <!-- Scroller -->
-            <div id="logo-scroller" class="flex flex-col gap-10">
-              <img class="max-h-24 max-w-[350px] w-auto object-contain" src="assets/images/avant-genomics.png" alt="Avant Genomics" />
-              <img class="max-h-24 max-w-[350px] w-auto object-contain" src="assets/images/us-army.png" alt="U.S Army" />
-              <img class="max-h-24 max-w-[350px] w-auto object-contain" src="assets/images/uvahealth.png" alt="UVA Health" />
-              <img class="max-h-24 max-w-[350px] w-auto object-contain" src="assets/images/louisiana-state-police.png" alt="Louisiana State Police"/>
-            </div>
-            <div class="pointer-events-none absolute top-0 h-16 w-full bg-gradient-to-b from-midnight to-transparent"></div>
-            <!-- Bottom Fade -->
-            <div class="pointer-events-none absolute bottom-0 h-16 w-full bg-gradient-to-t from-midnight to-transparent"></div>
-          </div>
-        </div>
-
-        </div>
-      </div>
-  </section>
-
-  <script>
-    const scroller = document.getElementById('logo-scroller');
-
-    // Duplicate the logos dynamically for seamless loop
-    scroller.innerHTML += scroller.innerHTML;
-
-    let scrollPosition = 0;
-    const speed = 0.5; // Adjust speed here (pixels per frame)
-
-    function step() {
-      scrollPosition += speed;
-      if (scrollPosition >= scroller.scrollHeight / 2) {
-        scrollPosition = 0;
-      }
-      scroller.style.transform = `translateY(-${scrollPosition}px)`;
-      requestAnimationFrame(step);
-    }
-
-    requestAnimationFrame(step);
-  </script>
-
-  <script>
-    // const words = ["AI Integration", "Computing Efficiency", "Cloud Migration"];
-    const words = ["AI", "Data", "Software"];
-
-    const el = document.getElementById("typing-text");
-
-    let wordIndex = 0;
-    let charIndex = 0;
-    let typing = true;
-
-    function typeLoop() {
-      const currentWord = words[wordIndex];
-
-      if (typing) {
-        el.textContent = currentWord.slice(0, charIndex + 1);
-        charIndex++;
-        if (charIndex === currentWord.length) {
-          typing = false;
-          setTimeout(typeLoop, 2400); // pause before deleting
-          return;
-        }
-      } else {
-        el.textContent = currentWord.slice(0, charIndex - 1);
-        charIndex--;
-        if (charIndex === 0) {
-          typing = true;
-          wordIndex = (wordIndex + 1) % words.length;
-        }
-      }
-
-      setTimeout(typeLoop, typing ? 100 : 50);
-    }
-
-    typeLoop();
-  </script>
-
-  </section>
-
-
 
 </body>
 
