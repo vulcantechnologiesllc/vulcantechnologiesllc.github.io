@@ -392,10 +392,10 @@
           <div class="relative h-96 overflow-hidden flex justify-center">
             <!-- Scroller -->
             <div id="logo-scroller" class="flex flex-col gap-10">
-              <img class="max-h-24 max-w-[350px] w-auto object-contain" src="assets/images/avant-genomics.png" alt="Avant Genomics" />
-              <img class="max-h-24 max-w-[350px] w-auto object-contain" src="assets/images/us-army.png" alt="U.S Army" />
-              <img class="max-h-24 max-w-[350px] w-auto object-contain" src="assets/images/uvahealth.png" alt="UVA Health" />
-              <img class="max-h-24 max-w-[350px] w-auto object-contain" src="assets/images/louisiana-state-police.png" alt="Louisiana State Police"/>
+              <img class="max-h-24 max-w-[350px] w-auto object-contain" src="/assets/images/avant-genomics.png" alt="Avant Genomics" />
+              <img class="max-h-24 max-w-[350px] w-auto object-contain" src="/assets/images/us-army.png" alt="U.S Army" />
+              <img class="max-h-24 max-w-[350px] w-auto object-contain" src="/assets/images/uvahealth.png" alt="UVA Health" />
+              <img class="max-h-24 max-w-[350px] w-auto object-contain" src="/assets/images/louisiana-state-police.png" alt="Louisiana State Police"/>
             </div>
             <div class="pointer-events-none absolute top-0 h-16 w-full bg-gradient-to-b from-midnight to-transparent"></div>
             <!-- Bottom Fade -->
@@ -406,7 +406,6 @@
         </div>
       </div>
   </section>
-
 
 <section class="overflow-hidden border-b border-white-800 bg-midnight py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -492,7 +491,7 @@
       <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
         <li>
           <div class="flex items-center gap-x-6">
-            <img class="size-16 rounded-full" src="assets/images/default.png" alt="assets/images/default.png" />
+            <img class="size-16 rounded-full" src="assets/images/wpg.jpg" alt="William Greig" />
             <div>
               <h3 class="text-base/7 font-semibold tracking-tight text-white">
                 William Greig
@@ -505,7 +504,7 @@
         </li>
         <li>
           <div class="flex items-center gap-x-6">
-            <img class="size-16 rounded-full" src="assets/images/default.png" alt="" />
+            <img class="size-16 rounded-full" src="assets/images/default.png" alt="Omar Ben-Gacem" />
             <div>
               <h3 class="text-base/7 font-semibold tracking-tight text-white">
                 Omar Ben-Gacem
@@ -518,7 +517,7 @@
         </li>
         <li>
           <div class="flex items-center gap-x-6">
-            <img class="size-16 rounded-full" src="assets/images/default.png" alt="" />
+            <img class="size-16 rounded-full" src="assets/images/zg.JPG" alt="Zoey Golabek" />
             <div>
               <h3 class="text-base/7 font-semibold tracking-tight text-white">
                 Zoey Golabek
@@ -530,11 +529,24 @@
           </div>
         </li>
 
+        <li>
+          <div class="flex items-center gap-x-6">
+            <img class="size-16 rounded-full" src="assets/images/default.png" alt="Jonathan Du" />
+            <div>
+              <h3 class="text-base/7 font-semibold tracking-tight text-white">
+                Jonathan Du
+              </h3>
+              <p class="text-sm/6 font-semibold text-indigo-400">
+                R&D Specialist (Chemistry)
+              </p>
+            </div>
+          </div>
+        </li>
 
 
         <li>
           <div class="flex items-center gap-x-6">
-            <img class="size-16 rounded-full" src="assets/images/default.png" alt="" />
+            <img class="size-16 rounded-full" src="assets/images/default.png" alt="Amanda Pearson" />
             <div>
               <h3 class="text-base/7 font-semibold tracking-tight text-white">
                 Amanda Pearson
@@ -548,13 +560,13 @@
 
         <li>
           <div class="flex items-center gap-x-6">
-            <img class="size-16 rounded-full" src="assets/images/default.png" alt="" />
+            <img class="size-16 rounded-full" src="assets/images/default.png" alt="Vicky DeGuzman" />
             <div>
               <h3 class="text-base/7 font-semibold tracking-tight text-white">
-                Jonathan Du
+                Vicky DeGuzman
               </h3>
               <p class="text-sm/6 font-semibold text-indigo-400">
-                R&D Specialist (Chemistry)
+                Senior Strategic Advisor
               </p>
             </div>
           </div>
@@ -588,41 +600,6 @@
     requestAnimationFrame(step);
   </script>
 
-  <script>
-    // const words = ["AI Integration", "Computing Efficiency", "Cloud Migration"];
-    const words = ["AI", "Data", "Software"];
-
-    const el = document.getElementById("typing-text");
-
-    let wordIndex = 0;
-    let charIndex = 0;
-    let typing = true;
-
-    function typeLoop() {
-      const currentWord = words[wordIndex];
-
-      if (typing) {
-        el.textContent = currentWord.slice(0, charIndex + 1);
-        charIndex++;
-        if (charIndex === currentWord.length) {
-          typing = false;
-          setTimeout(typeLoop, 2400); // pause before deleting
-          return;
-        }
-      } else {
-        el.textContent = currentWord.slice(0, charIndex - 1);
-        charIndex--;
-        if (charIndex === 0) {
-          typing = true;
-          wordIndex = (wordIndex + 1) % words.length;
-        }
-      }
-
-      setTimeout(typeLoop, typing ? 100 : 50);
-    }
-
-    typeLoop();
-  </script>
 
   </section>
 
