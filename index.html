@@ -354,42 +354,6 @@ layout: none
     requestAnimationFrame(step);
   </script>
 
-  <script>
-    // const words = ["AI Integration", "Computing Efficiency", "Cloud Migration"];
-    const words = ["AI", "Data", "Software"];
-
-    const el = document.getElementById("typing-text");
-
-    let wordIndex = 0;
-    let charIndex = 0;
-    let typing = true;
-
-    function typeLoop() {
-      const currentWord = words[wordIndex];
-
-      if (typing) {
-        el.textContent = currentWord.slice(0, charIndex + 1);
-        charIndex++;
-        if (charIndex === currentWord.length) {
-          typing = false;
-          setTimeout(typeLoop, 2400); // pause before deleting
-          return;
-        }
-      } else {
-        el.textContent = currentWord.slice(0, charIndex - 1);
-        charIndex--;
-        if (charIndex === 0) {
-          typing = true;
-          wordIndex = (wordIndex + 1) % words.length;
-        }
-      }
-
-      setTimeout(typeLoop, typing ? 100 : 50);
-    }
-
-    typeLoop();
-  </script>
-
   </section>
 
 
